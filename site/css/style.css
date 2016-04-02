@@ -43,6 +43,23 @@ canvas{
   vertical-align:bottom;
 }
 
+.main-body{
+  /*background-color: #e3f2fd;*/
+}
+
+.body-title{
+  position: relative;
+  display: inline-block;
+  /*width: 70%;*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.body-text{
+  position: relative;
+  display: inline-block;
+  /*width: 70%;*/
+}
 
 /* ---- stats.js ---- */
 
@@ -97,10 +114,15 @@ canvas{
   z-index: 1;
 }
 
-.nav-bar{
-  z-index: 2;
-  position: absolute !important;
-  /*background: green;*/
+
+.nav-wrapper{
+  /*background-color: #043564 !important; */
+}
+
+.brand-logo{
+  margin-left: 10px !important;
+  font-family: Ubuntu, sans-serif !important;
+  /*color: #e3f2fd !important;*/
 }
 
 .title-div-abs{
@@ -109,6 +131,9 @@ canvas{
   top: 100px;
   left: 50%;
   text-align: center;
+
+  /*white-space:nowrap;*/
+
 }
 
 .title-div-rel{
@@ -126,6 +151,23 @@ canvas{
   /*font-weight: bold;*/
   margin: 0;
   padding: 0;
+
+  margin-bottom: 40px;
+}
+
+.title-text-2 {
+  background: transparent;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  font-size: 8em;
+  /*font-weight: bold;*/
+  margin: 0;
+  padding: 0;
+}
+
+.title-blue {
+  color: #2196f3;
+  font-size: 6em;
 }
 
 .sub-title{
@@ -147,45 +189,87 @@ canvas{
   /*position: absolute; !important;*/
   /*margin: 2px !important;*/
   /*left: 2px;*/
+  
 }
 
 .links-div{
-  /*margin-top: 20px;*/
-  /*background: transparent;*/
   position: relative !important;
-  left: -30px;
+  left: 25px;
   top: 50px;
-  /*z-index: 2 !important;*/
-  /*top: 250px;*/
-  /*background-color: #64B5F6 !important;*/
+
+  white-space:nowrap;
 }
 
 .link-button{
-  position: absolute; !important;
+  position: absolute;
+}
 
+#twitter-button{
+  right: 0;
+}
+
+#github-button{
+  right: 15px;
+}
+
+#bitbucket-button{
+  right: 30px;
+}
+
+#linkedin-button{
+  right: 45px;
+}
+
+#email-button{
+  right: 60px;
+}
+
+
+
+
+
+.links-fixed{ 
+  position: fixed;
+  margin-left: 5px;
+  top: 30%;
+  /*transform: translateY(60%);*/
   /*margin: 2px !important;*/
   /*left: 2px;*/
 }
 
-#twitter-button{
-  left: 60px;
+.links-div2{
+  /*position: relative !important;*/
+  /*left: 25px;*/
+  /*top: 100px;*/
+  
+  /*white-space:nowrap;*/
 }
 
-#github-button{
-  left: 45px;
+.link-button2{
+  /*margin: 5px;*/
+  /*left: 2px;*/
 }
 
-#bitbucket-button{
-  left: 30px;
+#twitter-button2{
+  top: 0;
 }
 
-#linkedin-button{
-  left: 15px;
+#github-button2{
+  top: -10px;
 }
 
-#email-button{
-  left: 0px;
+#bitbucket-button2{
+  top: -20px;
 }
+
+#linkedin-button2{
+  top: -30px;
+}
+
+#email-button2{
+  top: -40px;
+}
+
 
 
 
@@ -195,5 +279,26 @@ canvas{
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) }
+  transform: translate(-50%, -50%) 
+}
+
+
+
+.about-text{
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.about-col2{
+}
+
+.col2-text{
+  /*color: #2196f3;*/
+  font-weight: bold;
+}
+
+
+
+.footer-links{
+  margin-top: 5px;
 }
