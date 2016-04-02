@@ -1,6 +1,4 @@
-/* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
-   ========================================================================== */
+/* HTML5 CSS Reset Minified - Eric Meyer */
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
@@ -18,12 +16,8 @@ input,select{vertical-align:middle}
 li{list-style:none}
 
 
-/* =============================================================================
-   My CSS
-   ========================================================================== */
 
-/* ---- base ---- */
-
+/* ---- My CSS ---- */
 html,body{ 
 	width:100%;
 	height:100%;
@@ -43,14 +37,125 @@ canvas{
   vertical-align:bottom;
 }
 
-.main-body{
-  /*background-color: #e3f2fd;*/
+.icon-img{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+
+
+/* ---- Title page ----*/
+
+.title-div-abs{
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 50%;
+  text-align: center;
+}
+
+.title-div-rel{
+  position: relative;
+  /*top: 50px;*/
+  left: -50%;
+  text-align: center;
+}
+
+.title-text {
+  background: transparent;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  font-size: 8em;
+  /*font-weight: bold;*/
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 40px;
+}
+
+.title-text-2 {
+  background: transparent;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  font-size: 8em;
+  /*font-weight: bold;*/
+  margin: 0;
+  padding: 0;
+}
+
+.sub-title{
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  font-size: 3em;
+}
+
+.title-button{
+  position: relative;
+  top: 20px;
+  font-size: 1em;
+  margin: 10px;
+}
+
+
+.links-div{
+  position: relative !important;
+  left: 25px;
+  top: 50px;
+
+  white-space:nowrap;
+}
+
+.link-button{
+  position: absolute;
+}
+
+#twitter-button{
+  right: 0;
+}
+
+#github-button{
+  right: 15px;
+}
+
+#bitbucket-button{
+  right: 30px;
+}
+
+#linkedin-button{
+  right: 45px;
+}
+
+#email-button{
+  right: 60px;
+}
+
+
+
+
+
+
+/* ---- Standard page ---- */
+
+.nav-wrapper{
+  /*background-color: #043564 !important; */
+}
+
+.brand-logo{
+  margin-left: 10px !important;
+  font-family: Ubuntu, sans-serif !important;
+  /*color: #e3f2fd !important;*/
 }
 
 .body-title{
   position: relative;
   display: inline-block;
-  /*width: 70%;*/
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -58,8 +163,61 @@ canvas{
 .body-text{
   position: relative;
   display: inline-block;
-  /*width: 70%;*/
 }
+
+.title-blue {
+  color: #2196f3;
+  font-size: 6em;
+}
+
+.about-text{
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.about-col2{
+
+}
+
+.col2-text{
+  /*color: #2196f3;*/
+  font-weight: bold;
+}
+
+.footer-links{
+  margin-top: 5px;
+}
+
+
+.links-fixed{ 
+  position: fixed;
+  margin-left: 5px;
+  top: 30%;
+}
+
+#twitter-button2{
+  top: 0;
+}
+
+#github-button2{
+  top: -10px;
+}
+
+#bitbucket-button2{
+  top: -20px;
+}
+
+#linkedin-button2{
+  top: -30px;
+}
+
+#email-button2{
+  top: -40px;
+}
+
+
+
+
 
 /* ---- stats.js ---- */
 
@@ -99,7 +257,6 @@ canvas{
   border-radius: 0 0 3px 3px;
 }
 
-
 /* ---- particles.js container ---- */
 
 #particles-js{
@@ -114,191 +271,3 @@ canvas{
   z-index: 1;
 }
 
-
-.nav-wrapper{
-  /*background-color: #043564 !important; */
-}
-
-.brand-logo{
-  margin-left: 10px !important;
-  font-family: Ubuntu, sans-serif !important;
-  /*color: #e3f2fd !important;*/
-}
-
-.title-div-abs{
-  position: absolute;
-  z-index: 2;
-  top: 100px;
-  left: 50%;
-  text-align: center;
-
-  /*white-space:nowrap;*/
-
-}
-
-.title-div-rel{
-  position: relative;
-  /*top: 50px;*/
-  left: -50%;
-  text-align: center;
-}
-
-.title-text {
-  background: transparent;
-  color: white;
-  font-family: Ubuntu, sans-serif;
-  font-size: 8em;
-  /*font-weight: bold;*/
-  margin: 0;
-  padding: 0;
-
-  margin-bottom: 40px;
-}
-
-.title-text-2 {
-  background: transparent;
-  color: white;
-  font-family: Ubuntu, sans-serif;
-  font-size: 8em;
-  /*font-weight: bold;*/
-  margin: 0;
-  padding: 0;
-}
-
-.title-blue {
-  color: #2196f3;
-  font-size: 6em;
-}
-
-.sub-title{
-  margin: 0;
-  padding: 0;
-  background: transparent;
-  color: white;
-  font-family: Ubuntu, sans-serif;
-  font-size: 3em;
-  /*font-weight: bold;*/
-}
-
-.title-button{
-  position: relative;
-  top: 20px;
-  font-size: 1em;
-  margin: 10px;
-  /*left: 50%;*/
-  /*position: absolute; !important;*/
-  /*margin: 2px !important;*/
-  /*left: 2px;*/
-  
-}
-
-.links-div{
-  position: relative !important;
-  left: 25px;
-  top: 50px;
-
-  white-space:nowrap;
-}
-
-.link-button{
-  position: absolute;
-}
-
-#twitter-button{
-  right: 0;
-}
-
-#github-button{
-  right: 15px;
-}
-
-#bitbucket-button{
-  right: 30px;
-}
-
-#linkedin-button{
-  right: 45px;
-}
-
-#email-button{
-  right: 60px;
-}
-
-
-
-
-
-.links-fixed{ 
-  position: fixed;
-  margin-left: 5px;
-  top: 30%;
-  /*transform: translateY(60%);*/
-  /*margin: 2px !important;*/
-  /*left: 2px;*/
-}
-
-.links-div2{
-  /*position: relative !important;*/
-  /*left: 25px;*/
-  /*top: 100px;*/
-  
-  /*white-space:nowrap;*/
-}
-
-.link-button2{
-  /*margin: 5px;*/
-  /*left: 2px;*/
-}
-
-#twitter-button2{
-  top: 0;
-}
-
-#github-button2{
-  top: -10px;
-}
-
-#bitbucket-button2{
-  top: -20px;
-}
-
-#linkedin-button2{
-  top: -30px;
-}
-
-#email-button2{
-  top: -40px;
-}
-
-
-
-
-.icon-img{
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%) 
-}
-
-
-
-.about-text{
-  margin-top: 10px;
-  font-size: 1.5em;
-}
-
-.about-col2{
-}
-
-.col2-text{
-  /*color: #2196f3;*/
-  font-weight: bold;
-}
-
-
-
-.footer-links{
-  margin-top: 5px;
-}
