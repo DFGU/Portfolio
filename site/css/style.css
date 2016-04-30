@@ -49,12 +49,15 @@ canvas{
 
 
 /* ---- Title page ----*/
+.no-click{
+  pointer-events: none !important;
+}
 
 .title-div-abs{
   position: absolute;
   z-index: 2;
-  top: 100px;
-  left: 50%;
+  top: 10%;
+  /*left: 50%;*/
   text-align: center;
 }
 
@@ -74,7 +77,7 @@ canvas{
   margin: 0;
   padding: 0;
 
-  margin-bottom: 40px;
+  margin-top: 50px;
 }
 
 .title-text-2 {
@@ -98,11 +101,23 @@ canvas{
 
 .title-button{
   position: relative;
-  top: 20px;
+  pointer-events: auto !important;
+  top: 10px;
   font-size: 1em;
   margin: 10px;
 }
 
+
+.title-buttons{
+  position: relative !important;
+    
+}
+
+.title-links{
+  position: relative !important;
+  margin-top: 20px;
+  margin-left: 55px;
+}
 
 .links-div{
   position: relative !important;
@@ -114,6 +129,8 @@ canvas{
 
 .link-button{
   position: absolute;
+  margin-bottom: 30px;
+  pointer-events: auto !important;
 }
 
 #twitter-button{
@@ -267,7 +284,6 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  position: absolute;
-  z-index: 1;
+  position: fixed !important;
 }
 
