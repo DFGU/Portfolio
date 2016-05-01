@@ -154,22 +154,6 @@ canvas{
 }
 
 
-.portfolio-body
-{
-   height: 50vh;
-}
-
-.about-image{
-    width: 100% !important;
-}
-
-.about-card{
-    margin-top: 2% !important;
-    margin-bottom: 2% !important;
-    width: 100% !important;
-}
-
-
 /* ---- Standard page ---- */
 
 .nav-wrapper{
@@ -246,7 +230,34 @@ canvas{
 }
 
 
+.portfolio-body
+{
+   height: 50vh;
+}
 
+.about-image{
+    width: 100% !important;
+}
+
+.about-card{
+    margin-top: 2% !important;
+    margin-bottom: 2% !important;
+    width: 100% !important;
+}
+
+.about-sub-image{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: relative!important;
+    float: left !important;
+}
+
+.about-sub-text{
+  margin: 10px;
+  font-size: 1.7em;
+  font-style: italic;
+}
 
 
 /* ---- stats.js ---- */
